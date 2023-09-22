@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#fff , #ccc)
+}
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 20px 20px;
+    background: #1c1c1c;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    outline: #333 10px solid;
+}
+.display{
+    height: 90px;
+    width: 100%;
+    outline: none;
+    border: solid 0.3;
+    text-align: right;
+    margin: 50px 0;
+    font-size: 40px;
+    color: #111;
+    pointer-events: none;
+}
+input{
+    background: #999;
+    border-radius: 9px;
+}
+.button{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.button button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(#e8e8e8 , #9b9b9b);
+}
+.button button:hover{
+    transition: .5s;
+    background: linear-gradient(#9b9b9b , #e8e8e8); 
+}
+.button button:active{
+    transform: scale(0.99);
+}
+.operator{
+    color: #e1e1e1;
+}
+button.opo{
+    background: linear-gradient(#4b3763, #331f4d);
+}
+button.opo:hover{
+    background: linear-gradient(#331f4d ,#4b3763 )
+}
+button.eq{
+    background: linear-gradient(#b06803, #a35603);
+}
+button.eq:hover{
+    background:linear-gradient(#a35603, #b06803); 
+}
